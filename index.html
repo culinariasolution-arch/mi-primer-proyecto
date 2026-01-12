@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Web en iPad</title>
-</head>   
-<body style="background-color: #1a1a2e; color: #ffffff; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0;">
-    <h1 style="color: #00d2ff;">Hola desde mi iPad air</h1>
-    <p>He logrado configurar mi entorno de desarrollo </p>
-
-</body>
-</html>
+    <title>Prueba de sincronizacion</title>
+    </head>
+    <body id="cuerpo" style="background-color: #1a1a2e; color: white; font-family: sans-serif; text-align: center; transition: 0.5s;">
+        <h1>Sincronizacion activada</h1>
+        <p>Si ves esto, el iPad y github estan conectados.</p>
+        <button onclick="cambiarColor()"
+    style="padding: 15px; border-radius: 10px; cursor: pointer;">
+       Cambiar color de fondo
+       </button>
+       <script>
+           function cambiarColor() {
+            const colores = `#ff4757`, `#2ed573`, `#1e90ff`, `#ffa502`, `1a1a2e`];
+               const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+               document.getElementById(`cuerpo`).style.backgroundColor = colorAleatorio;
+           } 
+       </script>
+    </body>
+    </html> 
