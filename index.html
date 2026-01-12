@@ -1,21 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Prueba de sincronizacion</title>
-    </head>
-    <body id="cuerpo" style="background-color: #1a1a2e; color: white; font-family: sans-serif; text-align: center; transition: 0.5s;">
-        <h1>Sincronizacion activada</h1>
-        <p>Si ves esto, el iPad y github estan conectados.</p>
-        <button onclick="cambiarColor()"
-    style="padding: 15px; border-radius: 10px; cursor: pointer;">
-       Cambiar color de fondo
-       </button>
-       <script>
-           function cambiarColor() {
-            const colores = ['#ff4757', '#2ed573', '#1e90ff', '#ffa502', '1a1a2e'];
-               const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
-               document.getElementById('cuerpo').style.backgroundColor = colorAleatorio;
-           } 
-       </script>
-    </body>
-    </html> 
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0"> 
+        <title>Bien Jamón</title>
+        <styles>
+            body { font-family: 'Helvetica', sans-serif; margin: 0; background-color: #f8f9fa; color: #333; }
+            header { background: #2c3e50; color: white; padding: 60px 20px; text-align: center; }
+            .container { padding: 40px 20px; text-align: center; }
+            h1 { margin: 0; font-size: 2.5em; letter-spacing: 2px; }
+            p { font-size: 1.2em; color: #666; }
+            .boton-reserva { 
+                background-color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weidth: bold; display: inline-block; margin-top: 20px; transition: 0.3s;
+            }
+            .boton-reserva:hover 
+            { background-color: #d35400; transform: scale(1.1); }
+                .menu-preview { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap; }
+                .plato { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 250px; }
+                </styles>
+                </head>
+                <body>
+                    <header> 
+                        <h1>JAMÓN - BARRA - BRASAS</h1>
+                        <p>La mejor experiencia gastronomica en caudete</p>
+                        </header>
+                        <div class="container">
+                            <h2>Nuestra especialidad</h2>
+                            <div class="menu-preview"> 
+                                <div class="plato"> 
+                                    <h3>Pasta al pesto</h3>
+                                    </div>
+                        <a href="https://wa.me/+34653567143" class="boton-reserva">RESERVAR MESA</a>
+                        </div>
+                        </div>
+                        </body>
+                        </html>
